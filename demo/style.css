@@ -1,0 +1,197 @@
+/* --- Reset và Cài đặt chung --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* --- Header --- */
+header {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+    height: 50px; /* Chiều cao của logo */
+}
+
+header h1 {
+    margin-left: 1.5rem;
+    color: #1877f2;
+}
+
+/* --- Navigation Bar --- */
+nav {
+    background-color: #1877f2;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Hiển thị các mục trên cùng một hàng */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #166fe5; /* Hiệu ứng khi di chuột qua */
+}
+
+/* --- Bố cục chính (Container) --- */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto; /* Căn giữa và tạo khoảng cách */
+    padding: 0 1rem;
+    display: flex;
+    gap: 2rem; /* Khoảng cách giữa main và aside */
+}
+
+/* --- Main Content --- */
+main {
+    flex: 3; /* Chiếm 3/4 không gian */
+    background: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+.meta-info {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* --- Aside (Sidebar) --- */
+aside {
+    flex: 1; /* Chiếm 1/4 không gian */
+    background: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+aside h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #1877f2;
+    padding-bottom: 0.5rem;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 1rem;
+}
+
+aside ul li:last-child {
+    border-bottom: none; /* Bỏ gạch chân cho mục cuối */
+    margin-bottom: 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside ul li a:hover {
+    color: #1877f2;
+}
+
+
+/* --- Footer --- */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* --- CSS cho phần Bài tập 4 (Product Showcase) --- */
+
+/* Vùng chứa toàn bộ section sản phẩm */
+.product-showcase {
+    max-width: 1200px; /* Giữ cùng chiều rộng với container chính */
+    margin: 2rem auto; /* Căn giữa và tạo khoảng cách */
+    padding: 0 1rem;
+}
+
+/* Vùng chứa 3 card sản phẩm */
+.product-container {
+    display: flex;         /* Sử dụng Flexbox để dàn các card trên một hàng */
+    gap: 2rem;             /* Tạo khoảng cách 2rem giữa các card, giống như main và aside */
+    text-align: center;
+}
+
+/* Kiểu dáng cho mỗi card sản phẩm */
+.product-card {
+    flex: 1;               /* Giúp cả 3 card có chiều rộng bằng nhau và lấp đầy không gian */
+    background: #ffffff;   /* Nền trắng giống main và aside */
+    border-radius: 8px;    /* Bo tròn các góc cho mềm mại */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Đổ bóng giống các khối khác */
+    overflow: hidden;      /* Đảm bảo ảnh bo tròn theo card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng khi di chuột */
+}
+
+/* Hiệu ứng phóng to nhẹ khi di chuột qua card */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Hình ảnh bên trong card */
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;        /* Loại bỏ khoảng trắng thừa dưới ảnh */
+}
+
+/* Vùng chứa thông tin (chữ) của sản phẩm */
+.product-card .product-info {
+    padding: 1.5rem;
+}
+
+/* Tiêu đề sản phẩm */
+.product-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5em;
+    color: #1877f2; /* Sử dụng màu xanh chủ đạo */
+}
+
+/* Mô tả sản phẩm */
+.product-card p {
+    color: #666; /* Sử dụng màu xám phụ cho mô tả */
+    font-size: 0.9em;
+}

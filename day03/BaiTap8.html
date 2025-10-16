@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 8 - Bố cục</title>
+</head>
+
+<body>
+
+    <main>
+
+        <section>
+            <h1>THÀNH CHÂU BIOTECH</h1>
+            <h2>Công nghệ vì một hành tinh xanh</h2>
+            <p>
+                "Chúng tôi cung cấp các sản phẩm công nghệ sinh học chất lượng cao, được nghiên cứu và sản xuất theo quy
+                trình chuẩn mực, đảm bảo hiệu quả và an toàn cho cây trồng - vật nuôi. Với đa dạng dòng sản phẩm từ phân
+                bón vi sinh, chế phẩm sinh học đến các giải pháp thân thiện môi trường. Quý khách hàng dễ dàng lựa chọn
+                và đặt hàng theo nhu cầu. Chúng tôi cam kết dịch vụ nhanh chóng, tư vấn tận tình và đồng hành cùng Quý
+                khách trong suốt quá trình sử dụng."
+            </p>
+
+            <img src="#" alt="Hình ảnh sản phẩm 1">
+            <img src="#" alt="Hình ảnh sản phẩm 2">
+        </section>
+
+        <hr>
+        <section>
+            <p>
+                Quý khách vui lòng điền thông tin và nhu cầu sản phẩm vào form bên dưới. Chúng tôi sẽ liên hệ lại nhanh
+                chóng để tư vấn và xác nhận đơn hàng. Mọi thông tin đều được bảo mật tuyệt đối.
+            </p>
+
+            <form action="#" method="post">
+                <label for="san-pham">Tên sản phẩm</label><br>
+                <select id="san-pham" name="san-pham">
+                    <option value="che-pham-sinh-hoc">Chế phẩm sinh học</option>
+                    <option value="phan-bon-vi-sinh">Phân bón vi sinh</option>
+                    <option value="duoc-pham">Dược phẩm</option>
+                </select>
+                <br><br>
+
+                <label for="so-luong">Số lượng</label><br>
+                <input type="number" id="so-luong" name="so-luong" placeholder="Số lượng đặt">
+                <br><br>
+
+                <label for="dia-chi">Địa chỉ</label><br>
+                <input type="text" id="dia-chi" name="dia-chi" placeholder="Địa chỉ">
+                <br><br>
+
+                <label for="tinh-thanhpho">Tỉnh/Thành phố</label><br>
+                <select id="tinh-thanhpho" name="tinh-thanhpho">
+                    <option value="hanoi">Tp. Hà Nội</option>
+                    <option value="hcm">Tp. Hồ Chí Minh</option>
+                    <option value="danang">Tp. Đà Nẵng</option>
+                </select>
+                <br><br>
+
+                <label for="xa-phuong">Xã/Phường</label><br>
+                <select id="xa-phuong" name="xa-phuong">
+                    <option value="phuong1">Phường 1</option>
+                    <option value="phuong2">Phường 2</option>
+                </select>
+                <br><br>
+
+                <label for="ho-ten">Tên người đặt hàng</label><br>
+                <input type="text" id="ho-ten" name="ho-ten" placeholder="Họ và tên">
+                <br><br>
+
+                <label for="dien-thoai">Điện thoại</label><br>
+                <input type="tel" id="dien-thoai" name="dien-thoai" placeholder="Điện thoại">
+                <br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <br><br>
+
+                <button type="submit">ĐẶT HÀNG</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

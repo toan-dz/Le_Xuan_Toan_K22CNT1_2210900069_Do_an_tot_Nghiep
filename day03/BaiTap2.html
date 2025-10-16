@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tin Tức Đơn Giản</title>
+    <style>
+        /* CSS Reset cơ bản */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        /* 1. Header: logo + tiêu đề trang */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        #logo {
+            max-height: 50px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        /* 2. Nav: thanh điều hướng */
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            /* Hiển thị các mục menu trên một hàng */
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Bố cục cho phần thân: Main + Aside */
+        .content-wrapper {
+            display: flex;
+            padding: 20px;
+        }
+
+        /* 3. Main: bài viết chính */
+        main {
+            flex: 3;
+            /* Chiếm 3/4 không gian */
+            margin-right: 20px;
+        }
+
+        main article h2 {
+            color: #0056b3;
+        }
+
+        /* 4. Aside: danh sách tin nổi bật */
+        aside {
+            flex: 1;
+            /* Chiếm 1/4 không gian */
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        aside li:last-child {
+            border-bottom: none;
+        }
+
+        aside a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        aside a:hover {
+            color: #0056b3;
+        }
+
+        /* 5. Footer: bản quyền */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo trang web" id="logo">
+            <h1>Trang Tin Tức Tổng Hợp</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tin mới</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-wrapper">
+
+            <main>
+                <article>
+                    <h2>Tiêu đề bài viết chính</h2>
+                    <p><strong>Ngày đăng: 16/10/2025</strong></p>
+                    <img src="https://via.placeholder.com/800x400?text=Ảnh+minh+họa" alt="Ảnh minh họa bài viết"
+                        style="max-width: 100%;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</p>
+                </article>
+            </main>
+
+            <aside>
+                <h3>Tin nổi bật</h3>
+                <ul>
+                    <li><a href="#">Dự báo thời tiết ngày mai</a></li>
+                    <li><a href="#">Giá vàng hôm nay tăng nhẹ</a></li>
+                    <li><a href="#">Kết quả bóng đá vòng loại World Cup</a></li>
+                    <li><a href="#">5 xu hướng công nghệ năm 2026</a></li>
+                    <li><a href="#">Hướng dẫn nấu ăn: Món gà rang gừng</a></li>
+                </ul>
+            </aside>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Bản quyền thuộc về Lê Xuân Toàn.</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
