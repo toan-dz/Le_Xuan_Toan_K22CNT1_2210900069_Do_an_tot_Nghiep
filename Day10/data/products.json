@@ -1,0 +1,74 @@
+{
+  "livingRoom": [
+    {
+      "id": 1,
+      "name": "Bàn uống nước",
+      "oldPrice": 8500000,
+      "price": 8990000,
+      "image": "img/banuongnuoc.jpg",
+      "rating": 0
+    },
+    {
+      "id": 2,
+      "name": "Kệ TV",
+      "oldPrice": 5300000,
+      "price": 4560000,
+      "image": "img/ketivi.jpg",
+      "rating": 0
+    },
+    {
+      "id": 3,
+      "name": "Kệ đồ",
+      "oldPrice": 6000000,
+      "price": 4990000,
+      "image": "img/kedo.jpg",
+      "rating": 0
+    },
+    {
+      "id": 4,
+      "name": "SOFA",
+      "oldPrice": 10000000,
+      "price": 8400000,
+      "image": "img/sofa.jpg",
+      "rating": 0
+    }
+  ],
+
+  "kitchen": [
+    {
+      "id": 5,
+      "name": "Bàn ăn",
+      "oldPrice": 12000000,
+      "price": 10550000,
+      "image": "img/banan.jpg",
+      "rating": 0
+    },
+    {
+      "id": 6,
+      "name": "Bàn trà",
+      "oldPrice": 4000000,
+      "price": 3600000,
+      "image": "img/bantra.jpg",
+      "rating": 0
+    }
+  ],
+
+  "bedroom": [
+    {
+      "id": 7,
+      "name": "Giường gỗ",
+      "oldPrice": 5100000,
+      "price": 4000000,
+      "image": "img/giuongngu.jpg",
+      "rating": 0
+    },
+    {
+      "id": 8,
+      "name": "Tủ quần áo",
+      "oldPrice": 14000000,
+      "price": 11200000,
+      "image": "img/tuquanao.jpg",
+      "rating": 0
+    }
+  ]
+}
