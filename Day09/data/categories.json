@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Phân bón vi sinh",
+    "status": 1
+  },
+  {
+    "id": 2,
+    "name": "Chế phẩm sinh học",
+    "status": 1
+  },
+  {
+    "id": 3,
+    "name": "Sản phẩm hữu cơ",
+    "status": 1
+  },
+  {
+    "id": 4,
+    "name": "Tin tức nông nghiệp",
+    "status": 1
+  },
+  {
+    "id": 5,
+    "name": "Công nghệ & đổi mới",
+    "status": 1
+  },
+  {
+    "id": 6,
+    "name": "Kỹ thuật trồng trọt",
+    "status": 0
+  },
+  {
+    "id": 7,
+    "name": "Kỹ thuật chăn nuôi",
+    "status": 1
+  },
+  {
+    "id": 8,
+    "name": "Nghiên cứu & phát triển",
+    "status": 1
+  },
+  {
+    "id": 9,
+    "name": "Giới thiệu doanh nghiệp",
+    "status": 1
+  },
+  {
+    "id": 10,
+    "name": "Tuyển dụng & hợp tác",
+    "status": 0
+  }
+]

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .main{
+            width: 80%;
+            margin: 1rem auto;
+        }
+        .img-big{
+            width: 100%;
+            height: calc(100vw / 2);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 3s ease;
+        }
+        .list-img{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 5px;
+        }
+        .list-img .img{
+            margin-top: 5px;
+            width: 100%;
+            transition: all 3s ease;
+        }
+        .list-img .img:hover{
+            border: 5px solid red;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="img-big">
+            <img src="img/1.jpg" alt="">
+        </div>
+        <div class="list-img">
+            <div class="img">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/4.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/5.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.list-img img').click(function(){
+                // lấy img hiện tại khi click
+                let src = $(this).attr('src');
+                // gắn vào ảnh to
+                // $('.img-big img').attr('src',src).animate(5000);
+                // hiêu ứng
+                // $('.img-big img')
+                //     .fadeOut(300, function() {
+                //         $(this).attr('src', src).fadeIn(300);
+                // });
+
+                // Phóng to /thu nhỏ
+                $('.img-big img')
+                    .fadeOut(200, function() {
+                        $(this).attr('src', src)
+                            .css({ transform: 'scale(0.8)' })
+                            .fadeIn(200)
+                            .animate({ transform: 'scale(1)' }, {
+                                step: function(now, fx) {
+                                    $(this).css('transform', `scale(${now})`);
+                                },
+                                duration: 300
+                            });
+                    });
+            })
+        })
+    </script>
+</body>
+</html>

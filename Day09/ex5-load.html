@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load data from json</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+    <section id="cate">
+        <h1>Danh mục</h1>
+        <ul>
+            <li><a href="#">item 1</a></li>
+        </ul>
+    </section>
+    <hr>
+    <section id="zone1">
+        <h2>Danh mục phòng</h2>
+        <ul class="list-group">
+            <li></li>
+        </ul>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+             $.ajax({
+                url: 'data/categories.json', // đường dẫn tới file JSON
+                method: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                // Xóa nội dung cũ
+                $('#cate ul').empty();
+
+                // Duyệt qua các phần tử trong JSON
+                    $.each(data, function(index, item){
+                        const statusText = item.status === 1 ? 'Hoạt động' : 'Ngừng hoạt động';
+                        $('#cate ul').append(
+                            `<li><a href="#${item.id}">${item.name} - <i> ${statusText} </i></a></li>`
+                        );
+                    });
+                },
+                error: function(xhr, status, error){
+                    console.error("Lỗi khi tải dữ liệu:", error);
+                    $('#cate ul').html('<li>Không thể tải dữ liệu danh mục!</li>');
+                }
+            });
+
+            // call api
+             $.ajax({
+                url: 'http://apixm.devmaster.vn/api/Categories', // đường dẫn tới file JSON
+                method: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                // Xóa nội dung cũ
+                $('#zone1 ul').empty();
+
+                // Duyệt qua các phần tử trong JSON
+                    $.each(data, function(index, item){
+                        const statusText = item.status === 1 ? 'Hoạt động' : 'Ngừng hoạt động';
+                        $('#zone1 ul').append(
+                            `<li class="list-group-item">${item.title}</li>`
+                        );
+                    });
+                },
+                error: function(xhr, status, error){
+                    console.error("Lỗi khi tải dữ liệu:", error);
+                    $('#zone1 ul').html('<li>Không thể tải dữ liệu danh mục!</li>');
+                }
+            });
+
+
+            
+        })
+
+    </script>
+</body>
+</html>
