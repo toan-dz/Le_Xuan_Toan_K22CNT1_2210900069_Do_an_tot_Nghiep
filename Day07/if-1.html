@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if</title>
+</head>
+<body>
+    <form action="" name="frm">
+        <input type="text" name="age" id="age">
+        <button onclick="fn_click()">Click</button>
+    </form>
+
+    <script>
+        const fn_click = ()=>{
+            age = frm.age.value;
+            alert(age);
+
+            if (age >= 18) {
+                console.log("Bạn đã đủ 18 tuổi.");
+                 alert(age + ' Bạn đã đủ 18 tuổi.');
+            }
+        }
+    </script>
+</body>
+</html>
